@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+</head>
+
+<body>
+    <fieldset style="height: 450px; width: 380px;">
+        <legend>Register</legend>
+        <form action="">
+
+
+
+            <label for="cm">Company Name
+            <select name="cm" id="cm">
+                <option value="default">--Select--</option>
+                <option value="Clarivate">Clarivate</option>
+            </select>
+        </label>
+            <br><br>
+
+
+            <!-- <label for="Companyname">Company Name :</label>
+            <input type="text" name="Companyname" id="Companyname" />
+            <br /><br /> -->
+
+
+            <label for="username">Name :</label>
+            <input type="text" name="ur" id="username" />
+            <br /><br />
+
+
+            <label for="Email">Email :</label>
+            <input type="text" id="Email" name="Email" />
+            <br /><br />
+
+
+            <label for="DOB">DOB</label>
+            <input type="date" name="dateofbirth" id="DOB" />
+            <br /><br />
+
+            <label for="time">time</label>
+            <input type="time" name="time" id="time" />
+            <br /><br />
+
+
+            <label for="phone">Contact</label>
+            <input type="phone" name="Phone number" id="phone" />
+            <br /><br />
+
+
+            <label for="Gender">Gender</label>
+            <input type="radio" id="Gender" name="Gender" value="Male" /> Male
+            <input type="radio" id="Gender" name="Gender" value="Female" /> Female
+            <input type="radio" id="Gender" name="Gender" value="Transgender" />
+            Transgender <br /><br />
+
+            <label for="sc">State and City</label>
+            <select name="sc" id="sc">
+                <option value="default">--Select--</option>
+                <optgroup label="Dheli">
+                    <option value="dn">Noida</option>
+                    <option value="dg">Gurgram</option>
+                </optgroup>
+                <optgroup label="Karnataka">
+                    <option value="my">Mysore</option>
+                    <option value="ba">Banglore</option>
+                    <option value="ma">Manglore</option>
+                </optgroup>
+            </select>
+            <br /><br />
+
+            <label for="ud">Upload Resume</label>
+            <input type="file" id="ud" name="ud">
+            <br><br>
+
+            <label for="Skills">Skills</label>
+            <input type="checkbox" id="Skills" name="Skills" value="java" /> JAVA
+            <input type="checkbox" id="Skills" name="Skills" value="python" /> python
+            <input type="checkbox" id="Skills" name="Skills" value="go" /> go
+            <input type="checkbox" id="Skills" name="Skills" value="javascript" />javascript
+            <input type="checkbox" id="Skills" name="Skills" value="c++" /> c++
+            <br /><br>
+
+            <center>
+                <input type="submit" />
+                <input type="reset" />
+
+        </form>
+    </fieldset>
+</body>
+
+</html>
