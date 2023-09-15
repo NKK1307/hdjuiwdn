@@ -1,0 +1,388 @@
+* {
+    box-sizing: border-box;
+    /* margin: 0%; */
+    padding: 0%;
+
+}
+
+.headerblock {
+    background-color: rgb(136, 85, 85);
+    color: white;
+    font-size: x-large;
+    text-align: end;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.main-navblock {
+    height: 75px;
+    background-color: rgb(54, 51, 51);
+    color: aliceblue;
+    display: flex;
+}
+
+
+/* logo */
+
+.main-navblock .logo-block {
+    height: 75px;
+    /* border: 2px solid white; */
+    width: 15%;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+.main-navblock .logo-block span {
+    font-style: italic;
+    text-decoration: overline;
+    color: antiquewhite;
+}
+
+
+.main-navblock .logo-block sup {
+    margin-top: -39px;
+    margin-left: -36px;
+    color: antiquewhite;
+
+}
+
+
+/* Link */
+
+.main-navblock .link {
+    height: 75px;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-weight: bold; */
+
+}
+
+
+
+.main-navblock .link a {
+    text-decoration: none;
+    font-size: x-large;
+    color: antiquewhite;
+}
+
+
+.main-navblock .link a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+
+/* contact */
+.main-navblock .contact {
+    height: 75px;
+    width: 15%;
+    color: aliceblue;
+    display: flex;
+    font-size: x-large;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 700;
+    position: relative;
+}
+
+
+.dropc {
+    height: 200px;
+    width: 250px;
+    border-radius: 25%;
+    background: linear-gradient(rgb(197, 166, 30), rgb(196, 194, 80), rgb(241, 237, 237));
+    color: black;
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    justify-content: space-evenly;
+    font-weight: bolder;
+    display: none;
+}
+
+.dropc ul li {
+    text-align: center;
+
+}
+
+/* drop hover */
+.main-navblock .contact:hover>.dropc {
+    display: block;
+    position: absolute;
+    top: 75px;
+    
+}
+
+
+/* Services */
+.main-navblock .services {
+    height: 75px;
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+.services .sicon{
+    height: 75px;
+    width: 75px;
+    color: rgb(235, 231, 231);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 100%;
+    background-color: rgb(19, 20, 20);
+
+}
+.services .sicon i{
+    font-size: medium;
+    color: rgb(247, 241, 241);
+}
+
+
+
+
+.landing-block {
+    height: 600px;
+    border: 2px solid;
+    display: flex;
+    background:linear-gradient(rgb(86, 216, 136),rgb(233, 238, 236)) ;
+}
+
+.landing-block #aboutblock{
+    height: 60%;
+    width: 50%;
+    font-size: x-large;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    word-spacing: 20px;
+    /* border: 2px solid black; */
+    padding-top: 188px;
+    padding-left: 15%;
+    line-height: 40px;
+    
+}
+
+.landing-block #aboutblock>.sbtn1{
+    height: 62px;
+    width: 195px;
+    border-radius: 31px 17px;
+    /* box-shadow: 8px 5px 11px ; */
+    background-color: aliceblue;
+    color: rgb(26, 24, 24); 
+    font-size : large;    
+    margin-left: 20px; 
+    border-color: none;
+    outline: none;
+}
+
+.landing-block #aboutblock>.sbtn2{
+    height: 62px;
+    width: 195px;
+    border-radius: 20px 17px;
+    /* box-shadow: 8px 5px 11px ; */
+    background-color: aliceblue;
+
+    color: rgb(26, 24, 24); 
+    font-size : large;     
+}
+.sbtn1:hover{
+    box-shadow: 8px 5px 4px white;
+}
+.sbtn2:hover{
+    box-shadow: 8px 5px 4px white;
+}
+
+
+
+.landing-block #sliderblock {
+    height: 400px;
+    width: 40%;
+    padding-top: 50px;
+    padding-left: 50px;
+    border-radius: 50px;
+    /* background-color: rgb(236, 199, 236); */
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.offeroct{
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 5px;
+    font-size: 75px;
+    word-spacing: 10px ;
+    font-style: italic;
+    text-shadow: 1px 7px 15px yellow;
+    animation: offer;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes offer {
+    15%{
+        background-color: brown;
+        text-shadow: 1px 7px 15px white;
+        color: yellow;
+    }
+    30%{
+        background-color: rgb(250, 244, 244);
+        text-shadow: 1px 7px 15px rgb(0, 0, 0);
+        color: yellow;
+    }
+    60%{
+        background-color: rgb(38, 38, 177);
+        text-shadow: 1px 7px 15px rgb(204, 119, 119);
+        color: yellow;
+    }
+
+}
+
+.placecard{
+    height: 1600px;
+    background-color: rgb(255, 255, 255);
+    margin-top: -10px;
+    display: grid;
+    grid-template-rows: 500px 400px 500px ;
+    grid-template-columns: auto auto auto;
+    row-gap: 100px;
+    column-gap: 50px;
+    margin: auto;
+}
+.placecard .cardblock{
+    height: 450px;
+    width: 350px;
+    border-radius: 15px;
+    background-color: white;
+    
+}
+
+.placecard .cardblock:hover{
+    height: 450px;
+    width: 350px;
+    background:linear-gradient(rgb(86, 216, 136),rgb(233, 238, 236)) ;
+    
+}
+.placecard .cardblock>img{
+    height: 250px;
+    width: 340px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.placecard .cardblock>h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.placecard .cardblock>p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    justify-content: space-around;
+}
+
+.placecard .cardblock>button{
+    height: 45px;
+    width: 100px;
+    border-radius: 25px;
+    outline: none;
+
+}
+
+.conect{
+    font-size: 32px;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+.mediablock{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+.transportcard{
+    background-color: rgb(7, 75, 52);
+    margin-top: 15px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.transportcard .tcard{
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    border: 10px solid rgb(255, 255, 255) ;
+}
+
+.transportcard .tcard>input{
+    outline: none;
+    /* border: none; */
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font: x-large;
+    text-align: center;
+}
+.transportcard .tcard>input:focus{
+    outline: none;
+    border: none;
+    color: aqua;
+    background-color: rgb(192, 182, 182);
+    font: x-large;
+    text-align: center;
+}
+.transportcard .tcard>button{
+    
+    height: 35px;
+    border-radius: 10px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.footerblock{
+    height: 400px;
+    background-color: gray;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.footerblock .logo{
+    margin-left: 1157px ;
+}
+
+.footerblock .logo>p{
+    font-size: 100px;
+    font-weight: 700;
+    margin-left: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.footerblock .userdata>input{
+    height: 55px;
+    width: 528px;
+    margin-left: 100px ;
+}
+
+.footerblock .userdata>button{
+    height: 45px;
+    width: 191px;
+    margin-left: 45px ;
+    color: black;
+    
+}
